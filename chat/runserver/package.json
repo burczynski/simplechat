@@ -1,0 +1,22 @@
+{
+  "name": "simpleChat",
+  "version": "0.0.0",
+  "description": "simple clients/operators chat",
+  "main": "app.js",
+  "scripts": {
+    "test": "None"
+  },
+  "repository": {
+    "type": "git",
+    "url": "None"
+  },
+  "keywords": [
+    "None"
+  ],
+  "author": "Ricardo Burczynski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "socket.io": "^2.0.3"
+  }
+}

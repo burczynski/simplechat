@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat Operador</title>
+    <data></data>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+   <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 60%; }
+      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+    </style>
+  </head>
+  <body>
+  <div class="content-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <aside style="float: left;">  
+            <div>Lista de chats</div>
+            <ul class="list-news" id="chats"></ul>
+          </aside>    
+        </div>
+        
+          <section class="row">
+            <ul class="list-news" id="messages"></ul>
+              <form action="" id='messageForm'>
+                <input id="myMessage" autocomplete="off" /><button>Enviar</button>
+              </form>
+          </section>
+      </div>
+    
+  </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script type="text/javascript" src="../js/operator.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>
